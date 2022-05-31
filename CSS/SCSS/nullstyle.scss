@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+} /*за допомогою данної функції ми скидуємо всі кордони які задаються браузером автоматично*/
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} /*дане значення зміню підрахунок ширини блоку так щоб нам було зручно знею працювати*/
+
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+} /*дана функція прибирає лінії обводки в деяких браузерах*/
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+} /*Робимо блочними данні теги nav, footer, header, aside*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -mos-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+} /*Дані параметри задають рівні умови для поведінки шрифтів, наприклад самовільне збільшення шрифтів на iphone*/
+
+input,
+button,
+textarea {
+    font-family: inherit;
+} /*команда для наслідування сімейства шрифтів*/
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+} /*прибирають деякі особливості в різних браузерах*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/* обнулення */
